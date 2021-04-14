@@ -1,0 +1,62 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    color: white;
+}
+
+header {
+    display: flex;
+    background-color: rgb(17, 113, 126);
+    padding: 1rem 3rem;
+    justify-content: flex-end;
+
+    img {
+        position: absolute;
+        left: 2rem;
+        top: -1.5em;
+        height: 160px;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+    
+        li {
+            border: 1px solid rgb(235, 230, 230);
+            border-radius: 10px;
+            padding: 0.5rem 1rem;
+            margin: 0 1rem;
+            cursor: pointer;
+            transition: background-color 400ms ease-in-out, color 600ms ease;
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        
+            &:hover, &:focus {
+                background-color: rgb(235, 230, 230);
+                
+                a {
+                    color: rgb(41, 41, 41);
+                }
+            }
+        }
+    }
+}
+
+.main-content {
+    width: 85%;
+    margin: 3rem auto;
+    color: black;
+}
+
+footer {
+    background-color: rgb(17, 113, 126);
+    padding: 1rem;
+}
